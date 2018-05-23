@@ -80,9 +80,9 @@ Click ***Close*** icon in *<u>server UI</u>* or press ***CTRL+C*** in *<u>comman
 
 After that you will see server 8002, 8003, 8006 will automatically connected. The picture shows a successful situation (the one, 8002, that takes 8001's place may vary).
 
-![hight_level_design](Project2-Document/pictures/test_case_ha.png)
+![hight_level_design](../Project2-Document/pictures/test_case_ha.png)
 
-![image-20180523111014339](/Users/eric/Documents/projects/DistributedSystem/Project2-Document/pictures/reconnect_ui_result.png)
+![image-20180523111014339](../Project2-Document/pictures/reconnect_ui_result.png)
 
 #### Message ensure
 
