@@ -144,7 +144,7 @@ java -jar ActivityStreamerClient.jar -u user1 -s 6gte017ngmi9dmsbv4pgjsiidj -rp 
 
 In order to simulate message disorder case, let us use a ***telnet session*** to simulate a ***server***  and make the order checking period a littler longer with `activity_check_interval=5000 `.
 
-#####Operations
+##### Operations
 
 1. Start 4 servers with `activity_check_interval=10000 (10 seconds)` 
 
@@ -196,7 +196,7 @@ Message 2: a "fake" message that send 5 second ago, which is early than preious 
 
 
 
-####Unique Register
+#### Unique Register
 
 ##### Operations
 
@@ -228,9 +228,9 @@ java -jar ActivityStreamerClient.jar -u user1 -rp 8002 -rh localhost
 
 Just try...
 
-####Server can join at any time
+#### Server can join at any time
 
-#####Operations
+##### Operations
 
 1. start the very first server
 
@@ -267,9 +267,9 @@ java -jar ActivityStreamerClient.jar -u user1 -s $secret -rp 8002 -rh localhost
   >
   > When user A reconnects to any server of this system, it can also receive this lost message.
 
-####Load balancing
+#### Load balancing
 
-#####Operations
+##### Operations
 
 1. start 2 servers 
 
