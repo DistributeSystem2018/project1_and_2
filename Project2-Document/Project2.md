@@ -21,7 +21,7 @@ git checkout layered
 
 #### How to start this system
 
-Check [here](../HowToStart.md) for detail.
+Check [here](../src/test/readme_shortcut_lanuch.md) for detail.
 
 
 
@@ -31,7 +31,7 @@ In this project, two parts (High Available & Eventually Consistency) of privious
 
 
 
-![hight_level_design](hight_level_design.png)
+![hight_level_design](pictures/hight_level_design.png)
 
 #### Network layer - High Available
 
@@ -39,7 +39,7 @@ This is the communication layer for the whole system and is responsible for main
 
 The reconnection will be conducted in this layer and will not impact the other layers.
 
-![high_available](/Users/eric/Documents/projects/DistributedSystem/Project2-Document/high_available.png)
+![high_available](pictures/high_available.png)
 
 #### Data Layer - Eventually Consistency
 
@@ -160,7 +160,7 @@ This laye is responsible for maintaining connections, sending/receiving data and
 {
     "command":"ACTIVITY_UPDATE",
     "owner":"username",
-    "activity_row":
+    "activity_list":
         {
          "udpateTime":"updateTime",
          "sendTime":"sendTime",
@@ -201,6 +201,7 @@ This laye is responsible for maintaining connections, sending/receiving data and
 {
     "command":"AUTHETICSTE_SUCC",
     "serverid":"serverid",
+    “server_list":SERVER_SYNC_JSON
     "user_list":USER_SYNC_JSON,
     "activity_entity":ACTIVITY_SYNC_JSON
 }

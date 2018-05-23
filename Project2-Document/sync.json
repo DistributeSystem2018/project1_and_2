@@ -1,0 +1,69 @@
+{
+  "command": "AUTHETICSTE_SUCC",
+  "serverid": "serverid",
+  "server_list": [
+    {
+      "serverId": "serverId1", "load": "load1",
+      "ip": "ip1", "action": "UPDATE_OR_INSERT"
+    },
+    {
+      "serverId": "serverId2", "load": "load2",
+      "ip": "ip2", "action": "UPDATE_OR_INSERT"
+    }
+  ],
+  "user_list": [
+    {
+      "username": "username1", "secret1": "secret",
+      "online": "true/false", "udpateTime": "updateTime"
+    },
+    {
+      "username": "username2", "secret2": "secret",
+      "online": "true/false", "udpateTime": "updateTime"
+    }
+  ],
+  "activity_entity": [
+    {
+      "owner": "username1",
+      "activity_list": [
+        {
+          "udpateTime": "updateTime", "sendTime": "sendTime",
+          "isDelivered": "false/ture",
+          "activity": {
+            "authenticated_user": "authenticated_user",
+            "other": "other"
+          }
+        },
+        {
+          "udpateTime": "updateTime", "sendTime": "sendTime",
+          "isDelivered": "false/ture",
+          "activity": {
+            "authenticated_user": "authenticated_user",
+            "other": "other"
+          }
+        }
+      ]
+    },
+    {
+      "owner": "username2",
+      "activity_list": [
+        {
+          "udpateTime": "updateTime", "sendTime": "sendTime",
+          "isDelivered": "false/ture",
+          "activity": {
+            "authenticated_user": "authenticated_user",
+            "other": "other"
+          }
+        },
+        {
+          "udpateTime": "updateTime", "sendTime": "sendTime",
+          "isDelivered": "false/ture",
+          "activity": {
+            "authenticated_user": "authenticated_user",
+            "other": "other"
+          }
+        }
+      ]
+    }
+  ]
+}
+

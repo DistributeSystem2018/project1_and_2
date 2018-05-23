@@ -1,0 +1,115 @@
+{
+  "owner": "user_B",
+  "activity_list": [
+    {
+      "udpateTime": "1", "sendTime": "1",
+      "isDelivered": "false",
+      "activity": {
+        "authenticated_user": "authenticated_user",
+        "content": "a"
+      }
+    }
+  ]
+}
+
+
+New/Updated protocols
+
+- SERVER_ANNOUNCE
+
+{
+  "command":"SERVER_ANNOUNCE",
+  "action":"update/delete",
+  "serverId":"serverId",
+  "load":"load",
+  "ip":"ip",
+  "port":"port"
+}
+
+
+
+- USER_UPDATE
+
+{
+  "command":"USER_UPDATE",
+  "username":"username",
+  "secret":"secret",
+  "online":"true/false",
+  "udpateTime":"updateTime"
+}
+
+- USER_SYNC
+
+{
+  "command":"USER_SYNC",
+  "user_list":[
+    {"username":"username",
+      "secret":"secret",
+      "online":"true/false",
+      "udpateTime":"updateTime"},
+    {"username":"username",
+      "secret":"secret",
+      "online":"true/false",
+      "udpateTime":"updateTime"}
+    ...
+  ]
+}
+
+- ACTIVITY_UPDATE (activit id = activity.hashcode())
+
+{
+  "command":"ACTIVITY_UPDATE",
+  "owner":"username",
+  "activity_list":
+  {
+    "udpateTime":"updateTime",
+    "sendTime":"sendTime",
+    "isDelivered":"false/ture",
+    "activity":{
+      "authenticated_user":"authenticated_user",
+      "other":"other"}
+  }
+}
+
+- ACTIVITY_SYNC
+
+{
+  "command":"ACTIVITY_SYNC",
+  "activity_entity":[
+    {USER1_ACTIVITY_UPDATE_JSON},
+    {USER2_ACTIVITY_UPDATE_JSON},
+    ...
+  ]
+}
+
+- AUTHENTICATE
+
+{
+  "command":"AUTHENTICATE",
+  "serverid":"serverid",
+  "secret":"system_secret",
+  "host":"ip to provide services(set from command line arg)",
+  "port":"port to provide services(set from command line arg)"
+}
+
+- AUTHETICSTE_SUCC
+
+{
+  "command":"AUTHETICSTE_SUCC",
+  "serverid":"serverid",
+  “server_list":SERVER_SYNC_JSON
+  "user_list":USER_SYNC_JSON,
+  "activity_entity":ACTIVITY_SYNC_JSON
+}
+
+- BACKUP_LIST
+
+{
+  "command":"BACKUP_LIST",
+  "servers":[
+    {"host":"host_ip","port":"prot_num"},
+    {"host":"host_ip2","port":"port_num2"}
+  ]
+}
+
+
