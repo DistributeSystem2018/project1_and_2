@@ -1,0 +1,43 @@
+package activitystreamer.message;
+
+/**
+ * MessageType
+ * <p>
+ * Author Ning Kang
+ * Date 9/4/18
+ */
+
+public  enum MessageType {
+	LOGIN ,
+	LOGIN_SUCCESS ,
+	LOGIN_FAILED ,
+	LOGOUT ,
+
+	REGISTER ,
+	REGISTER_SUCCESS ,
+	REGISTER_FAILED ,
+	REDIRECT ,
+
+	LOCK_REQUEST,
+	LOCK_ALLOWED,
+	LOCK_DENIED,
+	USER_REGISTER_RESULT,
+	USER_UPDATE,
+	USER_SYNC,
+
+	
+	ACTIVITY_BROADCAST ,
+	ACTIVITY_MESSAGE ,
+	ACTIVITY_UPDATE,
+	ACTIVITY_SYNC,
+
+	AUTHENTICATION_FAIL ,
+	AUTHENTICATE ,
+	AUTHENTICATION_SUCC, // added for project 2
+
+	INVALID_MESSAGE ,
+	SERVER_ANNOUNCE,
+
+	/* for project 2*/
+	BACKUP_LIST
+}

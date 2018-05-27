@@ -1,0 +1,27 @@
+[
+  {
+    "owner": "user1",
+    "activity_list": [
+      {
+        "id": 724739964,
+        "activity": {
+          "message_num": 2,
+          "authenticated_user": "user2"
+        },
+        "updateTime": 1527074855510,
+        "sendTime": 1527074838090,
+        "isDelivered": true
+      },
+      {
+        "id": 373940027,
+        "activity": {
+          "message_num": 1,
+          "authenticated_user": "user2"
+        },
+        "updateTime": 1527074855511,
+        "sendTime": 1527074839755,
+        "isDelivered": true
+      }
+    ]
+  }
+]}

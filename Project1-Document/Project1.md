@@ -19,7 +19,7 @@ git checkout Aaron_Solution
 
 #### How to start this system
 
-Check [here](../HowToStart.md) for detail.
+Check [here](../src/test/readme_shortcut_lanuch.md) for detail.
 
 
 
